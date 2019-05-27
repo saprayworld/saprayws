@@ -1,5 +1,5 @@
 const WebSocket = require('ws');
-const wss = new WebSocket.Server({ port: 80 }); 
+const wss = new WebSocket.Server({ port: 5678 }); 
 // สร้าง websockets server ที่ port 4000
 wss.on('connection', function connection(ws) { // สร้าง connection
   ws.on('message', function incoming(data) {
